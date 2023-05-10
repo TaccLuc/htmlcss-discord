@@ -48,12 +48,10 @@ body{
 
 .col-5{
     width: calc((100% / 12) * 5);
-    height: 200px;
 }
 
 .col-7{
     width: calc((100% / 12) * 7);
-    height: 200px;
 }
 
 .col-12{
@@ -180,8 +178,36 @@ h1{
 /* 
     MAIN
 */
+main{
+    color: black;
+}
 
+main > div:nth-child(even){
+    background-color: #F6F6F6;
+}
 
+.main-big-col{
+    padding: 70px 20px;
+}
+
+.main-small-col{
+    padding: 100px 70px 70px 70px;
+}
+
+h2{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.main-small-col p{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+main section.flex,
+main > div{
+    margin-bottom: 100px;
+}
 
 /* 
     FOOTER
@@ -207,20 +233,6 @@ footer > div:nth-child(2) > div{
 /* 
     DEBUG
 */
-
-main > div:nth-child(even){
-    background-color: #D3D3D3;
-}
-
-.col-5{
-    background-color: #FFC0CB;
-    border: 2px dashed black;
-}
-
-.col-7{
-    background-color: #1E90FF;
-    border: 2px dashed black;
-}
 
 .col-12{
     background-color: #228B22;
