@@ -1,0 +1,317 @@
+/* 
+    RESET
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    GENERAL
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.padding{
+    padding: 20px 0;
+}
+
+.button{
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* 
+    FLEX
+*/
+
+.flex{
+    display:flex;
+    justify-content: center;
+}
+
+.footer-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+
+.col-5{
+    width: calc((100% / 12) * 5);
+}
+
+.col-7{
+    width: calc((100% / 12) * 7);
+}
+
+.col-12{
+    width: calc((100% / 12) * 12);
+}
+
+
+/* 
+    HEADER
+*/
+
+/* TOP HEADER */
+
+header{
+    background-color: #255EE9;
+    color: white;
+}
+
+.header-flex > *{
+    padding: 10px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+}
+
+#logo{
+    width: 20%;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: white;
+}
+
+header nav{
+    width: 60%;
+    text-align: center;
+}
+
+header li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.login{
+    width: 20%;
+    text-align: end;
+}
+
+.login-button{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+/* BOTTOM HEADER */
+
+.bottom-header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron{
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.jumbotron > div{
+    width: 60%;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.jumbotron p{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.jumbotron div div a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.download-button{
+    color: black;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.browser-button{
+    background-color: #313338;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+/* 
+    MAIN
+*/
+main{
+    color: black;
+}
+
+main > div:nth-child(even){
+    background-color: #F6F6F6;
+}
+
+.main-big-col{
+    padding: 70px 20px;
+}
+
+.main-small-col{
+    padding: 100px 70px 70px 70px;
+}
+
+h2{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.main-small-col p{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+main section.flex,
+main > div{
+    margin-bottom: 50px;
+}
+
+.main-biggest-col{
+    text-align: center;
+    padding: 30px;
+}
+
+.main-biggest-col h2{
+    font-size: 2.8em;
+}
+
+.main-biggest-col p{
+    font-size: 1.2em;
+}
+
+.main-biggest-col img{
+    width: 100%;
+}
+
+.download-background{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 70px;
+}
+
+.download-background h3{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.download-button-2{
+    color: white;
+    background-color: #7289DA;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+main > div:last-child,
+main > div:last-child div:first-child{
+    margin-bottom: 0px;
+}
+
+/* 
+    FOOTER
+*/
+
+footer > div,
+footer >section {
+    background-color: #23272A;
+}
+
+/* TOP FOOTER */
+
+
+footer > div:first-child{
+    padding-top: 30px;
+}
+
+footer h3{
+    color: #7289DA;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+footer h4{
+    color: white;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer h4 img{
+    width: 20px;
+}
+
+footer  h4:nth-child(3){
+    font-size: 1.5em;
+    letter-spacing: 9px;
+}
+
+footer nav{
+    margin-bottom: 20px;
+    color: #7289DA;
+    font-weight: 700;
+}
+
+footer nav li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    border-color: #7289DA;
+}
+/*  BOTTOM FOOTER */
+
+footer > div:nth-child(2) > div{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.register-button{
+    background-color: #7289DA;  
+    padding: 10px 20px;
+}
+
+.register-button a{
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
