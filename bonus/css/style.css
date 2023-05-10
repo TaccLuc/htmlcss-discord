@@ -29,10 +29,8 @@ body{
     padding-top: 20px;
 }
 
-.button{
-    border: 0px solid black;
-    border-radius: 20px;
-    background-color: white;
+a:not(.button):hover{
+    text-decoration: underline;
 }
 
 /* 
@@ -66,6 +64,60 @@ body{
     width: calc((100% / 12) * 12);
 }
 
+/* 
+    BUTTONS
+*/
+
+.button{
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.button:hover{
+
+}
+
+.login-button{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+
+.download-button{
+    color: black;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.browser-button{
+    background-color: #313338;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.download-button-2{
+    color: white;
+    background-color: #7289DA;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+.register-button{
+    background-color: #7289DA;  
+    padding: 10px 20px;
+}
+
+.register-button a{
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
 
 /* 
     HEADER
@@ -115,14 +167,6 @@ header li{
     text-align: end;
 }
 
-.login-button{
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 0.9em;
-    font-weight: 600;
-
-}
 /* BOTTOM HEADER */
 
 .bottom-header{
@@ -156,18 +200,7 @@ h1{
     margin: 0px 10px;
 }
 
-.download-button{
-    color: black;
-    padding: 10px 20px;
-    font-weight: 700;
-}
 
-.browser-button{
-    background-color: #313338;
-    color: white;
-    padding: 10px 20px;
-    font-weight: 700;
-}
 /* 
     MAIN
 */
@@ -180,10 +213,6 @@ main{
     background-color: #F6F6F6;
 }
 
-hr.wave,
-hr.wave-upsidedown{
-    border: 0px;
-}
 
 .wave::before{
     content: "";
@@ -194,7 +223,7 @@ hr.wave-upsidedown{
     filter: brightness(0) saturate(100%) invert(100%) sepia(27%) saturate(29%) hue-rotate(285deg) brightness(111%) contrast(93%);
 }
 
-hr.wave-upsidedown::before{
+.wave-upsidedown::before{
     content: "";
     display:block;
     height: 100px;
@@ -253,13 +282,6 @@ h2{
     font-size: 1.5em;
 }
 
-.download-button-2{
-    color: white;
-    background-color: #7289DA;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: 400;
-}
 
 main > div:last-child,
 main > div:last-child div:first-child{
@@ -330,13 +352,3 @@ footer > div:nth-child(2) > div{
     padding-bottom: 50px;
 }
 
-.register-button{
-    background-color: #7289DA;  
-    padding: 10px 20px;
-}
-
-.register-button a{
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
-}
