@@ -42,8 +42,11 @@ body{
 .footer-flex{
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
+    align-items: flex-start;
+}
+
+.col-3{
+    width: calc((100% / 12) * 3);
 }
 
 .col-5{
@@ -56,23 +59,8 @@ body{
 
 .col-12{
     width: calc((100% / 12) * 12);
-    height: 200px;
 }
 
-.col-footer{
-    width: calc((100% / 12) * 8);
-    height: 200px;
-}
-
-.col-single{
-    width: calc((100% / 12) * 3);
-    height: 200px;
-}
-
-.col-double{
-    width: calc((100% / 12) * 4);
-    height: 200px;
-}
 
 /* 
     HEADER
@@ -206,58 +194,124 @@ h2{
 
 main section.flex,
 main > div{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.main-biggest-col{
+    text-align: center;
+    padding: 30px;
+}
+
+.main-biggest-col h2{
+    font-size: 2.8em;
+}
+
+.main-biggest-col p{
+    font-size: 1.2em;
+}
+
+.main-biggest-col img{
+    width: 100%;
+}
+
+.download-background{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 70px;
+}
+
+.download-background h3{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.download-button-2{
+    color: white;
+    background-color: #7289DA;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+main > div:last-child,
+main > div:last-child div:first-child{
+    margin-bottom: 0px;
 }
 
 /* 
     FOOTER
 */
 
+footer > div,
+footer >section {
+    background-color: #23272A;
+}
+
 /* TOP FOOTER */
 
-footer > div:first-child{
-    margin-bottom: 3px;
-}
 
 footer > div:first-child{
-    padding: 10px 0 30px 0;
+    padding-top: 30px;
 }
 
+footer h3{
+    color: #7289DA;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
 
+footer h4{
+    color: white;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer h4 img{
+    width: 20px;
+}
+
+footer  h4:nth-child(3){
+    font-size: 1.5em;
+    letter-spacing: 9px;
+}
+
+footer nav{
+    margin-bottom: 20px;
+    color: #7289DA;
+    font-weight: 700;
+}
+
+footer nav li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    border-color: #7289DA;
+}
 /*  BOTTOM FOOTER */
 
 footer > div:nth-child(2) > div{
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-/* 
-    DEBUG
-*/
-
-.col-12{
-    background-color: #228B22;
-    border: 2px dashed black;
+.register-button{
+    background-color: #7289DA;  
+    padding: 10px 20px;
 }
 
-.col-single{
-    background-color: #20B2AA;
-    border: 2px dashed white;
-}
-
-.col-double{
-    background-color: #F08080;
-    border: 2px dashed black;
-}
-
-.footer-flex{
-    background-color: #7FFFD4;
-}
-
-.footer-flex > *{
-    border: 2px dashed black;
-}
-
-footer > div,
-footer >section {
-    background-color: #23272A;
+.register-button a{
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
 }
