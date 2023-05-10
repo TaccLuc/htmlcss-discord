@@ -1,0 +1,202 @@
+/* 
+    RESET
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    GENERAL
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.padding{
+    padding: 20px 0;
+}
+
+/* 
+    FLEX
+*/
+
+.header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+}
+
+.flex{
+    display:flex;
+    justify-content: center;
+}
+
+.footer-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.col-5{
+    width: calc((100% / 12) * 5);
+    height: 200px;
+}
+
+.col-7{
+    width: calc((100% / 12) * 7);
+    height: 200px;
+}
+
+.col-12{
+    width: calc((100% / 12) * 12);
+    height: 200px;
+}
+
+.col-footer{
+    width: calc((100% / 12) * 8);
+    height: 200px;
+}
+
+.col-single{
+    width: calc((100% / 12) * 3);
+    height: 200px;
+}
+
+.col-double{
+    width: calc((100% / 12) * 4);
+    height: 200px;
+}
+
+/* 
+    HEADER
+*/
+
+/* TOP HEADER */
+
+.header-flex > *{
+    padding: 10px;
+}
+
+#logo{
+    width: 20%;
+}
+
+nav{
+    width: 60%;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+.login{
+    width: 20%;
+    text-align: end;
+}
+
+/* BOTTOM HEADER */
+
+
+/* 
+    MAIN
+*/
+
+
+
+/* 
+    FOOTER
+*/
+
+/* TOP FOOTER */
+
+footer > div:first-child{
+    margin-bottom: 3px;
+}
+
+footer > div:first-child{
+    padding: 10px 0 30px 0;
+}
+
+
+/*  BOTTOM FOOTER */
+
+footer > div:nth-child(2) > div{
+    padding-top: 20px;
+}
+
+/* 
+    DEBUG
+*/
+
+header{
+    background-color: #ADD8E6;
+}
+
+.header-flex > *{
+    border: 2px dashed black;
+    background-color: #DAA520;
+}
+
+header > div:nth-child(2){
+    background-color: #00008B;
+}
+
+header > div:nth-child(2) section > div{
+    height: 200px;
+    width: 60%;
+    background-color: #EE82EE;
+    border: 2px dashed black;
+}
+
+main > div:nth-child(even){
+    background-color: #D3D3D3;
+}
+
+.col-5{
+    background-color: #FFC0CB;
+    border: 2px dashed black;
+}
+
+.col-7{
+    background-color: #1E90FF;
+    border: 2px dashed black;
+}
+
+.col-12{
+    background-color: #228B22;
+    border: 2px dashed black;
+}
+
+.col-single{
+    background-color: #20B2AA;
+    border: 2px dashed white;
+}
+
+.col-double{
+    background-color: #F08080;
+    border: 2px dashed black;
+}
+
+.footer-flex{
+    background-color: #7FFFD4;
+}
+
+.footer-flex > *{
+    border: 2px dashed black;
+}
+
+footer > div,
+footer >section {
+    background-color: #23272A;
+}
