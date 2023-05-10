@@ -84,6 +84,7 @@ body{
 
 header{
     background-color: #255EE9;
+    color: white;
 }
 
 .header-flex > *{
@@ -102,10 +103,10 @@ header{
 }
 
 header nav a{
-    color: white;
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 700;
+    color: white;
 }
 
 header nav{
@@ -133,7 +134,49 @@ header li{
 }
 /* BOTTOM HEADER */
 
+.bottom-header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.jumbotron{
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.jumbotron > div{
+    width: 60%;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.jumbotron p{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.jumbotron div div a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.download-button{
+    color: black;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.browser-button{
+    background-color: #313338;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+}
 /* 
     MAIN
 */
@@ -164,17 +207,6 @@ footer > div:nth-child(2) > div{
 /* 
     DEBUG
 */
-
-header > div:nth-child(2){
-    background-color: #00008B;
-}
-
-header > div:nth-child(2) section > div{
-    height: 200px;
-    width: 60%;
-    background-color: #EE82EE;
-    border: 2px dashed black;
-}
 
 main > div:nth-child(even){
     background-color: #D3D3D3;
