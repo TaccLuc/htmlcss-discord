@@ -74,17 +74,12 @@ a:not(.button):hover{
     background-color: white;
 }
 
-.button:hover{
-
-}
-
 .login-button{
     color: black;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 0.9em;
     font-weight: 600;
-
 }
 
 .download-button{
@@ -111,12 +106,26 @@ a:not(.button):hover{
 .register-button{
     background-color: #7289DA;  
     padding: 10px 20px;
-}
-
-.register-button a{
     font-weight: 400;
     text-decoration: none;
     color: white;
+}
+
+.login-button:hover{
+    color: #7289da;
+}
+
+.download-button:hover{
+    color: #7289da;
+}
+
+.browser-button:hover{
+    background-color: #3f4147;
+}
+
+.download-button-2:hover,
+.register-button:hover{
+    background-color: #849efa;
 }
 
 /* 
