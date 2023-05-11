@@ -186,7 +186,7 @@ header li{
 
 .jumbotron{
     margin-top: 130px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .jumbotron > div{
@@ -222,6 +222,9 @@ main{
     background-color: #F6F6F6;
 }
 
+main img{
+    width: 100%;
+}
 
 .wave::before{
     content: "";
@@ -271,10 +274,6 @@ h2{
 
 .main-biggest-col p{
     font-size: 1.2em;
-}
-
-.main-biggest-col img{
-    width: 100%;
 }
 
 .download-background{
